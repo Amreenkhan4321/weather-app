@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+    height: 100vh;
+    width:100%;
+  background-image: url("weather-forecast-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.back-image{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    height: 95vh;
+    width: 85%;
+    background-position: center;
+    /* background-image: url("https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?cs=srgb&dl=pexels-tahir-shaw-186980.jpg&fm=jpg"); */
+}
+.section{
+    /* border: 2px solid yellow; */
+    height: 75vh;
+ width: 60%;
+ transform: translateX(-1%);
+ display: flex;
+ flex-direction: row;
+ align-items: flex-end;
+ justify-content: flex-start;
+ 
+}
+h1{
+margin:0px 20px 150px 50px;
+font-size: 45px;
+color: white;
+}
+h2{
+    font-size: 35px;
+    color:white;
+    margin-left: 25px;
+    margin-bottom: 10px;
+
+
+}
+h3{
+    font-size: 20px;
+    color:white;
+    
+}
+.data1{
+    margin:0px 40px 200px 0px;
+}
+.data2{
+    margin: 0px 0px 60px 10px;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+#partly{
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    margin:5px;
+}
+
+
+.search{
+    height: 75vh;
+   margin-right: -9.2px;
+    width: 39%;
+    display: flex;
+ flex-direction: column;
+/* opacity: .8; */
+/* background-color: #0F2027; */
+/* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), 
+rgba(0, 0, 0, 0.3));
+  */
+}
+input{
+    height: 32px;
+    width: 60%;
+    border: none;
+    padding: 5px;
+    text-align: center;
+   color: white;
+    border-bottom: 1px solid rgb(245, 235, 235);
+    background:none;
+    
+    margin-left: 20px;
+
+}
+
+button{
+    width: 26%;
+    height: 36px;
+    margin-left: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: linear-gradient(to left, #11998e, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background: linear-gradient(to right, #ff8008, #ffc837);  */
+    font-weight: 600;
+    margin-top: 30px;
+   
+
+}
+input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.weatherdetails{
+    color: #111213;
+    font-weight: 100;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 10px 20px 20px;
+    
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+.Weatherdetail{
+    height: 100px;
+    color: rgb(248, 240, 240);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+.Weatherpercentage{
+    height: 100px;
+    color: #CFD8DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right:55px ;
+}
+h4{
+    font-size: 24px;
+    margin-top: 57px;
+    text-align: center;
+font-weight: 600;
+color:    #d7a6ef;
+
+text-shadow:   #7e4a97 1px 5px 4px;
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    input{
+        width: 40%;
+    }
+    .back-image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section{
+        /* border: 2px solid yellow; */
+        height: 80vh;
+     width: 100%;
+     transform: translateX(-0%)translateY(0%);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    }
+    .data1{
+        margin: 0px 0px 0px 0px;
+        font-size: 15px;    
+        transform: translateY(-30%)translateX(10%);
+
+        }
+    
+        .data2{
+            margin: 0px 0px 0px 0px;
+            font-size: 18px;
+            font-weight: 900;
+            transform: translateY(28%)translateX(60%);
+            
+        
+        }
+        h1{
+            margin:0px 0px 0px 0px;
+            font-size: 40px;
+            color: white;
+            transform: translateY(130%)translateX(-40%);
+
+            }
+            h2{
+                font-size: 30px;
+                color:white;
+            
+            }
+            h3{
+                font-size: 18px;
+                color:white;
+            }
+          
+            .partly{
+                font-size: 20px;
+                color: white;
+                font-weight: 500;
+                margin:5px;
+            }
+            
+        
+
+    .search{
+        height: 55vh;
+        margin-right: 0px;
+        width: 100%;
+        display: flex;
+     flex-direction: column;
+
+    margin-top: 30px;
+     
+    }
+  }
